@@ -112,6 +112,7 @@ Devvit.addCustomPostType({
             <webview
               id="myWebView"
               url="page.html"
+              state={{username, counter}}
               onMessage={(msg) => onMessage(msg as WebViewMessage)}
               grow
               height={webviewVisible ? '100%' : '0%'}
